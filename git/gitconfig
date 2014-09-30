@@ -1,0 +1,66 @@
+[user]
+  name = Adam Frey
+  email = adam@adamfrey.me
+
+[alias]
+  st = status
+  changes = diff --name-status -r
+  b = branch
+  f = fetch
+  fa = fetch all
+  ff = merge --no-ff
+  nnoff = merge --ff-only
+  co = checkout
+  com = "!. ~/.githelpers && git_checkout_merged"
+  ci = commit
+  di = diff
+  dic = diff --cached
+  dh1 = diff HEAD~1
+  amend = commit --amend
+  diffstat = diff --stat -r
+  pr = pull-request -b dev
+  d = diff
+  aa = add --all
+  transpose = "!. ~/.githelpers && git_transpose"
+  fixup = !sh -c 'git commit --fixup=$1' -
+  squash = !sh -c 'git commit --squash=$1' -
+  ri = rebase --interactive --autosquash
+  fix = "!. ~/.githelpers && git_fixup"
+
+  # Fancy logging.
+  # h = head
+  # hp = head with patch
+  # r = recent commits, only current branch
+  # ra = recent commits, all reachable refs
+  # l = all commits, only current branch
+  # la = all commits, all reachable refs
+  head = !git l -1
+  h = !git head
+  hp = "!. ~/.githelpers && show_git_head"
+  r = !git l -30
+  ra = !git r --all
+  l = "!. ~/.githelpers && pretty_git_log"
+  la = !git l --all
+
+[color]
+  diff = auto
+  status = auto
+  color = auto
+
+[pull]
+  rebase = true
+[core]
+  excludesfile = /Users/adam/.gitignore.global
+[push]
+  default = current
+[merge]
+  tool = vimdiff
+[rebase]
+  autosquash = true
+#[forever "tools"]
+#	base = /Users/adam/work/forever-tools
+#	hooks = /Users/adam/work/forever-tools/git-template/hooks
+#[include]
+#	path = /Users/adam/work/forever-tools/gitconfig.include
+#[init]
+#	templatedir = /Users/adam/work/forever-tools/git-template
