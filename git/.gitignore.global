@@ -1,0 +1,9 @@
+/bin
+/solr
+/log/*.log
+/log/*.lck
+/script/test
+/script/features
+NOTES.md
+.sass-cache
+.DS_STORE
