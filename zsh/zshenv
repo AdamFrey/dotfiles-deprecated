@@ -1,3 +1,7 @@
+path+=(/usr/local/bin /user/bin /bin /user/sbin/ /sbin /usr/local/bin)
+path+=($HOME/bin)
+path+=(/usr/local/heroku/bin)
+
 source /usr/local/share/chruby/chruby.sh
 source /usr/local/share/chruby/auto.sh
 chruby ruby 2.1.2
