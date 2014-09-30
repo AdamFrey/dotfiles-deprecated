@@ -1,0 +1,75 @@
+# Unix
+alias tlf="tail -f"
+alias ln='ln -v'
+alias mkdir='mkdir -p'
+alias ...='../..'
+alias l='ls'
+alias ll='ls -al'
+alias lh='ls -Alh'
+alias -g G='| grep'
+alias -g M='| less'
+alias -g L='| wc -l'
+alias -g ONE="| awk '{ print \$1}'"
+alias e="$EDITOR"
+alias v="$VISUAL"
+alias bc='bc -l -q'
+alias projfind="find . -type f -not -path './public/*' -not -path './tmp/*' -not -path './.git/*' -not -path './solr/*' -not -path './bin/*' -not -path './doc/*' -not -path './app/assets/images/*'"
+
+# git
+alias gci="git pull --rebase && rake && git push"
+alias gs="git status"
+alias gc="git branch | cut -c 3- | selecta | xargs git checkout"
+alias gr="git branch --all --remotes | cut -c 3- | cut -d '/' -f 2-10 | selecta | xargs git checkout"
+alias gd="git branch | cut -c 3- | selecta | xargs git branch -D"
+alias gdm="git branch --merged | cut -c 3- | grep -v -e dev -e release-candidate -e master | xargs git branch -D"
+alias gps="git push origin HEAD"
+alias gpl="git pull"
+alias gfh="git fix HEAD"
+alias gap="git add -p"
+alias gcom="git com"
+alias grc="git rebase --continue"
+alias hpr="hub pull-request -b"
+
+# Bundler
+alias b="bundle"
+alias be="bundle exec"
+
+# Tests and Specs
+alias t="ruby -I test"
+alias cuc="bundle exec cucumber"
+alias rcop="rubocop -f ./lib/rubocop_grouped_formatter -f RuboCop::Formatter::GroupedFormatter"
+
+# Rubygem
+alias gi="gem install"
+alias giv="gem install -v"
+
+# Rails
+alias migrate="rake db:migrate && rake db:rollback && rake db:migrate && rake db:test:prepare"
+alias m="migrate"
+alias rk="rake"
+alias s="rspec"
+alias z="zeus"
+alias fd="foreman start -f Procfile.dev"
+alias rubo="rubocop"
+alias testmig="rake db:migrate RAILS_ENV=test"
+
+# Misc
+alias sov="ansible-playbook -i ./hosts site.yml"
+
+#Work
+alias mongodg="ssh -L 27018:tellurium:27017 dg"
+alias plaiddb="ssh -L 3333:germanium:5432 dg"
+alias pg='pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log'
+alias rt='rake CARRIERWAVE_STORAGE=file'
+alias cshot='ls -tr tmp/capybara/*png | tail -1 | xargs open'
+
+alias sideverb='bin/sidekiq -v -C config/sidekiq.yml'
+
+#Tmux
+alias tmux="TERM=screen-256color-bce tmux"
+
+#Vim
+alias vi="vim"
+
+#Emacs
+alias em="emacsclient"
