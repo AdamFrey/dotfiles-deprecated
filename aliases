@@ -57,10 +57,7 @@ alias testmig="rake db:migrate RAILS_ENV=test"
 alias sov="ansible-playbook -i ./hosts site.yml"
 
 #Work
-alias mongodg="ssh -L 27018:tellurium:27017 dg"
-alias plaiddb="ssh -L 3333:germanium:5432 dg"
 alias pg='pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log'
-alias rt='rake CARRIERWAVE_STORAGE=file'
 alias cshot='ls -tr tmp/capybara/*png | tail -1 | xargs open'
 
 alias sideverb='bin/sidekiq -v -C config/sidekiq.yml'
