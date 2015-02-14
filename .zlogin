@@ -1,1 +1,1 @@
-.zsh/login
+source .zsh/login
