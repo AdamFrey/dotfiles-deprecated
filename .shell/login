@@ -8,7 +8,7 @@ export VISUAL=$EDITOR
 # Path Settings
 pathprepend ~/bin PATH
 pathprepend /usr/local/bin PATH
-pathprepend /usr/bin PATH
+#pathprepend /usr/bin PATH
 pathprepend /bin PATH
 pathprepend /usr/sbin/ PATH
 pathprepend /sbin PATH
