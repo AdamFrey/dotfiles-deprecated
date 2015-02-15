@@ -1,1 +1,1 @@
-~/.zsh/env
+. ~/.shell/env

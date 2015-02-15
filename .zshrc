@@ -1,1 +1,1 @@
-~/.zsh/interactive
+. ~/.shell/interactive
