@@ -10,10 +10,7 @@ alias -g G='| grep'
 alias -g M='| less'
 alias -g L='| wc -l'
 alias -g ONE="| awk '{ print \$1}'"
-alias e="$EDITOR"
-alias v="$VISUAL"
 alias bc='bc -l -q'
-alias projfind="find . -type f -not -path './public/*' -not -path './tmp/*' -not -path './.git/*' -not -path './solr/*' -not -path './bin/*' -not -path './doc/*' -not -path './app/assets/images/*'"
 
 # git
 alias gci="git pull --rebase && rake && git push"
