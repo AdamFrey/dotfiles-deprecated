@@ -12,3 +12,6 @@ export BASH_ENV=~/.bash/env
 umask 0077
 
 ssource ~/.shell/env_local
+
+# source nix path
+ssource ~/.nix-profile/etc/profile.d/nix.sh
