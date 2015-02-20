@@ -1,1 +1,4 @@
 . ~/.shell/interactive
+
+# Use Emacs line editor
+bindkey -e
