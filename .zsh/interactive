@@ -2,3 +2,13 @@
 
 # Use Emacs line editor
 bindkey -e
+
+# ==== History ====
+HISTSIZE=10000000
+SAVEHIST=10000000
+HISTFILE=~/.history
+setopt append_history # Allow multiple term session to append to one history
+setopt inc_append_history # Add commands to history immediately
+setopt share_history # Get history from other running shells
+setopt extended_history # keep timestamps in history
+setopt hist_reduce_blanks # remove extra whitespace from commands
