@@ -13,3 +13,6 @@ pathprepend /bin PATH
 pathprepend /usr/sbin/ PATH
 pathprepend /sbin PATH
 pathprepend /usr/local/heroku/bin PATH
+
+# Nix Path Settings (temporary while support is exp. on OS X)
+NIX_PATH=~/.nix-pkgs-osx/nixpkgs:nixpkgs=~/.nix-pkgs-osx/nixpkgs
