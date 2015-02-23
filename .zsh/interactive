@@ -1,6 +1,7 @@
 . ~/.shell/interactive
 
-# Use Emacs line editor
+# ==== Editor ====
+# Emacs
 bindkey -e
 
 # ==== History ====
@@ -21,3 +22,10 @@ colors
 # print (1) in red for failed commands
 PS1="%{${fg[red]}%}%(?..(%?%) )\
 %{${fg[white]}%}%~ "
+
+# ==== Globbing ====
+setopt auto_cd
+setopt extended_glob
+
+# ==== Misc ====
+setopt no_beep
