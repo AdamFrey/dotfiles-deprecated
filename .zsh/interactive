@@ -12,3 +12,12 @@ setopt inc_append_history # Add commands to history immediately
 setopt share_history # Get history from other running shells
 setopt extended_history # keep timestamps in history
 setopt hist_reduce_blanks # remove extra whitespace from commands
+
+# ==== Colors ====
+autoload -U colors
+colors
+
+# ==== Prompt ====
+# print (1) in red for failed commands
+PS1="%{${fg[red]}%}%(?..(%?%) )\
+%{${fg[white]}%}%~ "
