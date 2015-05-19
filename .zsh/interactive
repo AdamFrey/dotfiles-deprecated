@@ -29,3 +29,6 @@ setopt extended_glob
 
 # ==== Misc ====
 setopt no_beep
+
+# ==== Completion ====
+autoload -U compinit && compinit
