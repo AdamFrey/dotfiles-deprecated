@@ -27,37 +27,16 @@ alias gcom="git com"
 alias grc="git rebase --continue"
 alias hpr="hub pull-request -b"
 
-# Bundler
-alias b="bundle"
-alias be="bundle exec"
+# Docker
+alias d=docker
+alias d-shell="eval \"\$(docker-machine env default)\""
+alias dm=docker-machine
 
-# Tests and Specs
-alias t="ruby -I test"
-alias cuc="bundle exec cucumber"
-alias rcop="rubocop -f ./lib/rubocop_grouped_formatter -f RuboCop::Formatter::GroupedFormatter"
-
-# Rubygem
-alias gi="gem install"
-alias giv="gem install -v"
-
-# Rails
-alias migrate="rake db:migrate && rake db:rollback && rake db:migrate && rake db:test:prepare"
-alias m="migrate"
-alias rk="rake"
-alias s="rspec"
-alias z="zeus"
-alias fd="foreman start -f Procfile.dev"
-alias rubo="rubocop"
-alias testmig="rake db:migrate RAILS_ENV=test"
+# Ruby
+alias frbe="foreman run bundle exec"
 
 # Misc
 alias sov="ansible-playbook -i ./hosts site.yml"
-
-#Work
-alias pg='pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log'
-alias cshot='ls -tr tmp/capybara/*png | tail -1 | xargs open'
-
-alias sideverb='bin/sidekiq -v -C config/sidekiq.yml'
 
 #Tmux
 alias tmux="TERM=screen-256color-bce tmux"
