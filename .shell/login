@@ -1,3 +1,6 @@
+# Source secret environment vars
+. ~/.shell/secret
+
 # Put your environment variables here
 
 # Preferred Programs
