@@ -32,3 +32,6 @@ setopt no_beep
 
 # ==== Completion ====
 autoload -U compinit && compinit
+
+# Set up z
+. `brew --prefix`/etc/profile.d/z.sh
