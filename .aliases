@@ -34,6 +34,9 @@ alias dcalc=/usr/bin/dc # ^name collision
 alias dstop-all="docker stop \$(docker ps -a -q)"
 alias drm-all="docker rm \$(docker ps -a -q)"
 alias joyent-docker=". ~/bin/joyent-docker-setup"
+alias drmi="docker images | tail -n +2 | selecta | tr -s ' ' | cut -d ' ' -f 3 | xargs docker rmi"
+alias drmc="docker ps -a | tail -n +2 | selecta | cut -d ' ' -f 1 | xargs docker rm"
+alias dstop="docker ps | tail -n +2 | selecta | cut -d ' ' -f 1 | xargs docker stop"
 
 # Ruby
 alias frbe="foreman run bundle exec"
