@@ -27,3 +27,6 @@ pathprepend /usr/share/man MANPATH
 
 # Nix Path Settings (temporary while support is exp. on OS X)
 NIX_PATH=~/.nix-pkgs-osx/nixpkgs:nixpkgs=~/.nix-pkgs-osx/nixpkgs
+
+# Google Cloud
+source '/Users/adam/bin/google-cloud-sdk/path.zsh.inc'

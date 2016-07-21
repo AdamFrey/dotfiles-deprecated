@@ -35,3 +35,6 @@ autoload -U compinit && compinit
 
 # Set up z
 . `brew --prefix`/etc/profile.d/z.sh
+
+# Google Cloud
+source '/Users/adam/bin/google-cloud-sdk/completion.zsh.inc'
